@@ -53,6 +53,6 @@ class TasksController extends Controller
       $tasks->fill($form);
       $tasks->save();
 
-      return redirect('tasks/bbs');
+     // return redirect('tasks/bbs');
   }  
 }
