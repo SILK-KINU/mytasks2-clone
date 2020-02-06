@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>オススメレシピ投稿サイト</h2>
+                <h3>投稿してください</h3>
                 <form action="{{ action('TasksController@tweet') }}" method="post" enctype="multipart/form-data">
 　　　　　　        
 　　　　　　     {{ csrf_field() }}
