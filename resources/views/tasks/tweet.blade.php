@@ -1,12 +1,12 @@
 @extends('layouts.front')
 
-@section('title', 'オススメレシピ掲示板')
+@section('title', 'オススメレシピ投稿サイト')
 @section('content')
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>オススメレシピ掲示板</h2>
-                <form action="{{ action('Admin\TasksController@bbs') }}" method="post" enctype="multipart/form-data">
+                <h2>オススメレシピ投稿サイト</h2>
+                <form action="{{ action('TasksController@tweet') }}" method="post" enctype="multipart/form-data">
 　　　　　　        
 　　　　　　     {{ csrf_field() }}
                 <div style="background-color: #E8F4FA; text-align: center;">
