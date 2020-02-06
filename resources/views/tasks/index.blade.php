@@ -54,13 +54,9 @@
                     <hr color="#c0c0c0">
                     <div class="row">
                         <div class="col-md-5">
-                        //ツイッターみたいに
-                        <a href=bss.blade.php>🍳掲示板閲覧🍳</a>
-                        <a href=messagebord.blade.php>🍳掲示板書き込み🍳</a>
-                        </div>
-                        <div class="col-md-5">
-                        //admin(投稿用）から入力できるようにする
-                        <a href=information.blade.php>🍳お知らせ🍳</a>
+                           <u><a href=bss.blade.php>♪オススメレシピ掲示板</a></u>
+                           <u><br><a href=messagebord.blade.php>♪オススメレシピ投稿ページ</a></br></u>
+                           <u><br><a href=information.blade.php>♪お知らせ</a></br></u>
                         </div>
                     </div>
                     <hr color="#c0c0c0">

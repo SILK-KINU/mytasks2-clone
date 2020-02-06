@@ -14,7 +14,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
 Auth::routes();
 
 Route::get('/', 'TasksController@index');
-
-//Auth::routes();
-
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('tasks/messageboard','TasksController@tweet');
+Route::get('tasks/tweet','TasksController@massageboard');
