@@ -14,5 +14,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function()
 Auth::routes();
 
 Route::get('/', 'TasksController@index');
-Route::get('tasks/tweet','TasksController@tweet');
-Route::get('tasks/messageboard','TasksController@messageboard');
+
+Route::get('tasks/timeline', 'TasksController@tweet');   
+Route::post('/tasks/timeline', 'TasksController@postTweet'); 
+
+Route::get('tasks/search','TasksController@search');
+Route::post('tasks/search','TasksController@search');
+
+Route::get('tasks/recommend','TasksController@recommend');

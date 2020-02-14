@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\HTML;
 
-// 追記
 use App\Tasks;
+
 use App\Tweet;
+
+use Auth;
 
 class TasksController extends Controller
 {
@@ -27,21 +29,34 @@ class TasksController extends Controller
         return view('tasks.index', ['headline' => $headline, 'posts' => $posts]);
     }
     
-    public function messageboard()
+    public function tweet()
     {
-        return view('tasks.messageboard');
+        $tweets = Tweet::all();
+        
+        return view('tasks.tweet', ["tweets" => $tweets]);
     }
     
-    public function tweet(Request $request)
+    public function postTweet(Request $request) //　Requestはpostリクエストを取得するためのもの
     {
-    $validator = $request->validate([ // これだけでバリデーションできるLaravelすごい！
-            'tweet' => ['required', 'string', 'max:280'], // 必須・文字であること・280文字まで（ツイッターに合わせた）というバリデーションをします（ビューでも軽く説明します。）
+        $validator = $request->validate([ 
+            'tweet' => ['required', 'string', 'max:280'], // 必須・文字であること・280文字まで（ツイッターに合わせた）というバリデーションをする。
         ]);
-        Tweet::create([ // tweetテーブルに入れるよーっていう合図
-            'user_id' => Auth::user()->id, // Auth::user()は、現在ログインしている人（つまりツイートしたユーザー）
-            'tweet' => $request->tweet, // ツイート内容
+        Tweet::create([ // tweetテーブルに入れる合図
+            'user_id' => Auth::user()->id, // Auth::user()は、現在ログインしている人(ツイートしたユーザー）
+            'tweet' => $request->tweet, // ツイートの内容
         ]);
-        return back(); // リクエスト送ったページに戻る（つまり、/timelineにリダイレクトする）    
+        
+        return back();
+    }
+    
+    public function search()
+    {
+        return view('tasks.search');
+    }
+    
+    public function recommend()
+    {
+        return view('tasks.recommend');
     }
     
 }

@@ -54,9 +54,8 @@
                     <hr color="#c0c0c0">
                     <div class="row">
                         <div class="col-md-5">
-                           <u><a href=tweet.blade.php>♪オススメレシピ掲示板</a></u>
-                           <u><br><a href=messageboard.blade.php>♪オススメレシピ投稿ページ</a></br></u>
-                           <u><br><a href=search.blade.php>♪糖質量を検索</a></br></u>
+                           <u><a href="{{url('tasks/timeline')}}">♪オススメレシピ掲示板</a></u>
+                           <u><br><a href="{{url('tasks/search')}}">♪糖質量check!</a></br></u>
                         </div>
                     </div>
                     <hr color="#c0c0c0">
