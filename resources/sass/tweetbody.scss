@@ -1,61 +1,121 @@
 body {
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #00afcc;
+  background-color: #E6ECF0;
   height: 100%;
   color: #fff;
 }
-.headline {
-  .caption {
-    position: relative;
-    width: 350px;
-    .image {
-      img {
-    width: 100%;
-      }
+button{
+    .p style {
+       color: #696969;
     }
-    .title {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      h1 {
-    color: #fff;
-    font-size: 1.2em;
-      }
-    }
-    .body {
-      font-size: 0.8em;
-    }
-  }
 }
 
-.header {
-  .logo {
-      width: 120px;
-      height: 82px;
-  }
+.btn {
+    background-color: #2695E0; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 0.5rem;
+    .p style {
+        font-size: 0.7rem; 
+        color: red; 
+        padding: 0 2rem;
+    }
 }
 
-.posts {
-  .post {
-    .date {
-      font-size: 0.6em;
-      color: #999999;
-    }
-    .title {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    .body {
-      font-size: 0.8em;
-    }
-    .image {
-      img {
-    width: 250px;
-      }
-    }
-  }
-}
+//   .col-md-8 mx-auto { 
+//   margin: 0 auto; 
+//   width: 50%; 
+//   height: 100%; 
+//   background-color: white;
+// }
+
+// .header {
+//   .logo {
+//       width: 120px;
+//       height: 82px;
+//   }
+// }
+
+// .headline {
+//   .caption {
+//     position: relative;
+//     width: 350px;
+//     .image {
+//       img {
+//     width: 100%;
+//       }
+//     }
+//     .title {
+//       width: 100%;
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       background-color: rgba(0, 0, 0, 0.6);
+//       h1 {
+//     color: #fff;
+//     font-size: 1.2em;
+//       }
+//     }
+//     .body {
+//       font-size: 0.8em;
+//     }
+//   }
+// }
+
+// .posts {
+//   .post {
+//     .date {
+//       font-size: 0.6em;
+//       color: #999999;
+//     }
+//     .title {
+//       font-size: 1.2em;
+//       font-weight: bold;
+//     }
+//     .body {
+//       font-size: 0.8em;
+//     }
+//     .image {
+//       img {
+//     width: 250px;
+//       }
+//     }
+//   }
+// }
+// }
+
+// .container {
+    
+// }
+// .box {
+//   background-color: #E8F4FA; 
+//   text-align: center;
+// .tweet {
+//   margin: 1rem; 
+//   padding: 0 1rem; 
+//   width: 70%; border-radius: 6px; 
+//   border: 1px solid #ccc; 
+//   height: 2.3rem;
+//   .button_type {
+//      background-color: #2695E0; 
+//      color: white; 
+//      border-radius: 10px; 
+//      padding: 0.5rem;
+// }
+// }
+// }
+
+// .p-style {
+//   font-size: 0.7rem; 
+//   color: red; 
+//   padding: 0 2rem;
+// }
+
+// .style {
+//   padding:2rem; 
+//   border-top: solid 1px #E6ECF0; 
+//   border-bottom: solid 1px #E6ECF0;
+
+
 

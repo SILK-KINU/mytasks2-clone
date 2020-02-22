@@ -10,7 +10,8 @@
 　　　　　　</div>
         </div>
     </div>
-    <ul>もやし</ul>
+    
+    <ul><img src="{{ asset('/assets/images/logo.png') }}" alt="ロゴ"></ul>
     <ul></ul>
     <ul></ul>
 @endsection

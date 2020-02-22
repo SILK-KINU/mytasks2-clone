@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class MasterTableSeeder extends Seeder
+class MastersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,6 +17,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'category',
                 'code' => 'meat',
                 'value' => '肉類',
+                'amount' => null,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -26,6 +27,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'category',
                 'code' => 'seafood',
                 'value' => '魚介類',
+                'amount' => null,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -35,6 +37,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'category',
                 'code' => 'vegitable',
                 'value' => '野菜類',
+                'amount' => null,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -44,6 +47,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'category',
                 'code' => 'dairy-product',
                 'value' => '卵&乳製品',
+                'amount' => null,
                 'sort_no' => 4,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -53,6 +57,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'category',
                 'code' => 'bean',
                 'value' => '大豆製品',
+                'amount' => null,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -62,6 +67,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'category',
                 'code' => 'seasoning',
                 'value' => '調味料',
+                'amount' => null,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -71,6 +77,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'pork_3',
                 'value' => '豚ロース＆豚もも＆豚ヒレ',
+                'amount' => 2/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -80,6 +87,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'pork_ibs',
                 'value' => '豚バラ',
+                'amount' => 1/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -89,6 +97,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'beef_loin',
                 'value' => '牛ロース',
+                'amount' => 2/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -98,6 +107,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'beef_2',
                 'value' => '牛バラ＆牛タン',
+                'amount' => 2/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -107,6 +117,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'beet_tenderloin',
                 'value' => '牛ヒレ',
+                'amount' => 3/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -116,6 +127,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'ram_loin',
                 'value' => 'ラムロース',
+                'amount' => 1/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -125,6 +137,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'ram_round',
                 'value' => 'ラムもも',
+                'amount' => 2/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -135,6 +148,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'chicken_cartilage',
                 'value' => '鶏ナンコツ',
+                'amount' => 4/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -144,6 +158,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'chicken_3',
                 'value' => '鶏ムネ＆鶏もも＆鶏ささみ',
+                'amount' => 0/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -153,6 +168,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'becon',
                 'value' => 'ベーコン',
+                'amount' => 3/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -162,6 +178,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_meat',
                 'code' => 'uncured_ham',
                 'value' => '生ハム',
+                'amount' => 5/10,
                 'sort_no' => 1,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -171,6 +188,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seafood',
                 'code' => 'clam',
                 'value' => 'あさり',
+                'amount' => 4/10,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -180,6 +198,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seafood',
                 'code' => 'seafood_1',
                 'value' => '秋刀魚＆鰹＆鮭＆ほっけ＆鮪（赤身）',
+                'amount' => 1/10,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -189,6 +208,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seafood',
                 'code' => 'seafood_2',
                 'value' => 'ししゃも＆しらす干し',
+                'amount' => 2/10,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -198,6 +218,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seafood',
                 'code' => 'sesfood_3',
                 'value' => '鰻＆鯖',
+                'amount' => 3/10,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -207,6 +228,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seafood',
                 'code' => 'sardine',
                 'value' => '鰯',
+                'amount' => 7/10,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -216,6 +238,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seafood',
                 'code' => 'seafood_4',
                 'value' => 'イカ＆タコ',
+                'amount' => 1/10,
                 'sort_no' => 2,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -225,6 +248,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'vegitable',
                 'code' => 'soybean_sprout',
                 'value' => '大豆もやし',
+                'amount' => 0/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -234,6 +258,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'vegitable',
                 'code' => 'vegitable_1',
                 'value' => 'ブロッコリー＆ちんげん菜',
+                'amount' => 8/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -243,6 +268,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'avocado',
                 'value' => 'アボカド',
+                'amount' => 9/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -252,6 +278,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'spinach',
                 'value' => 'ほうれん草',
+                'amount' => 3/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -261,6 +288,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'vegitable_2',
                 'value' => 'セロリ&レタス',
+                'amount' => 17/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -270,6 +298,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'vegitable_3',
                 'value' => '白菜＆きゅうり',
+                'amount' => 19/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -279,6 +308,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'shiitake',
                 'value' => 'しいたけ',
+                'amount' => 14/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -288,6 +318,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'shimeji',
                 'value' => 'しめじ',
+                'amount' => 13/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -297,6 +328,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_vegitable',
                 'code' => 'maitake',
                 'value' => '舞茸',
+                'amount' => 0/10,
                 'sort_no' => 3,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -306,6 +338,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_dairy_product',
                 'code' => 'egg',
                 'value' => '卵',
+                'amount' => 3/10,
                 'sort_no' => 4,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -315,6 +348,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_dairy_product',
                 'code' => 'camembert cheese',
                 'value' => 'カマンベールチーズ',
+                'amount' => 9/10,
                 'sort_no' => 4,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -324,6 +358,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_dairy_product',
                 'code' => 'cheeses',
                 'value' => 'ゴーダチーズ＆チェダーチーズ',
+                'amount' => 14/10,
                 'sort_no' => 4,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -333,6 +368,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_dairy_product',
                 'code' => 'fresh_cream',
                 'value' => '植物性生クリーム',
+                'amount' => 29/10,
                 'sort_no' => 4,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -342,6 +378,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_dairy_product',
                 'code' => 'butter',
                 'value' => 'バター',
+                'amount' => 3/10,
                 'sort_no' => 4,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -351,6 +388,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'aburaage',
                 'value' => '油揚げ',
+                'amount' => 14/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -360,6 +398,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'toufu',
                 'value' => '木綿豆腐',
+                'amount' => 12/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -369,6 +408,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'toufu2',
                 'value' => '絹豆腐',
+                'amount' => 17/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -378,6 +418,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'natto',
                 'value' => '納豆',
+                'amount' => 46/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -387,6 +428,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'atsuageganmo',
                 'value' => '厚揚げ＆がんもどき',
+                'amount' => 2/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -396,6 +438,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'okara',
                 'value' => 'おから',
+                'amount' => 23/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -405,6 +448,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'tounyu',
                 'value' => '無調整豆乳',
+                'amount' => 29/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -414,6 +458,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_bean',
                 'code' => 'kinako',
                 'value' => 'きな粉',
+                'amount' => 3/10,
                 'sort_no' => 5,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -423,6 +468,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'seasoning_1',
                 'value' => '塩＆鰹だし＆鶏ガラだし中華だし',
+                'amount' => 3/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -432,6 +478,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'vineger',
                 'value' => '穀物酢',
+                'amount' => 24/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -441,6 +488,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'soup kelp',
                 'value' => '昆布だし',
+                'amount' => 9/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -450,6 +498,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'mayonnaise',
                 'value' => 'マヨネーズ',
+                'amount' => 45/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -459,6 +508,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'black_pepper',
                 'value' => '黒こしょう',
+                'amount' => 666/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -468,6 +518,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'white_peper',
                 'value' => '白こしょう',
+                'amount' => 701/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -477,6 +528,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'soysouce',
                 'value' => '薄口醤油',
+                'amount' => 101/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -486,6 +538,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'sake',
                 'value' => '料理酒',
+                'amount' => 166/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -495,6 +548,7 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'consomme',
                 'value' => '固形コンソメ',
+                'amount' => 303/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
@@ -504,39 +558,13 @@ class MasterTableSeeder extends Seeder
                 'type' => 'material_seasoning',
                 'code' => 'oil',
                 'value' => 'オリーブオイル＆ごま油＆ラー油＆サラダ油',
+                'amount' => 0/10,
                 'sort_no' => 6,
                 'deleted_at' => null,
                 'deleted' => false,
             ],
-//もしidが15,24,32,46,55なら0g
-//もしidが8,12,19,23なら0.1g
-//もしidが7,10,13,20,37,42なら0.2g
-//もしidが11,16,21,27,33なら0.3g
-//もしidが14,18なら0.4g
-//もしidが17なら0.5g
-//もしidが22なら0.7g
-//もしidが25なら0.8g
-//もしidが26,34,48なら0.9g
-//もしidが39なら1.2g
-//もしidが31なら1.3g
-//もしidが30,35,38なら1.4g
-//もしidが28,40なら1.7g
-//もしidが29なら1.9g
-//もしidが43なら2.3g
-//もしidが47なら2.4g
-//もしidが36,44なら2.9g
-//もしidが49なら4.5g
-//もしidが41なら4.6g
-//もしidが52なら10.1g
-//もしidが45なら14.1g
-//もしidが53なら16.6g
-//もしidが54なら30.3g
-//もしidが50なら66.6g
-//もしidが51なら70.1g
-//もしidが45なら14.1g
-
 
         ];
-        DB::table('master')->insert($arr);
+        DB::table('masters')->insert($arr);
     }
 }

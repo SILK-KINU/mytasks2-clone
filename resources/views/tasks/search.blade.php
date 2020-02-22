@@ -7,7 +7,7 @@
             <div class="col-md-8 mx-auto">
                 <h2>糖質量chech!</h2>
                 <li>食品を入力してください (糖質量は100g中)</li>
-                <form action="{{ action('TasksController@search') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ action('TasksController@search') }}" method="get" enctype="multipart/form-data">
                     <div class="form-group row">
                         <label class="col-md-4　col-form-label text-md-right">種類</label>
                             <div class="col-md-6">
@@ -19,8 +19,10 @@
                                     <option value="dairy-product">卵&乳製品</option>
                                     <option value="bean">豆製品</option>
                                 </select>
+                                {{Form::select('categories', $master['category'])}}
                             </div> 
                         </label>
+                    </div>
                     <div class="form-group row">
                         <label class="col-md-4　col-form-label text-md-right">食品名</label>
                             <div class="col-md-6">
@@ -80,6 +82,9 @@
                             <input type="submit" value="検索">
                         </label>
                     </div>
+                    @foreach($master as $value)
+                        {{ $value->type }}
+                    @endforeach
                 </form>
             </div>
         </div>
@@ -89,5 +94,4 @@
     <u><a href="{{url('tasks/recommend')}}">低糖質の食品一覧</a></u>
     </div>
 @endsection
-
 
