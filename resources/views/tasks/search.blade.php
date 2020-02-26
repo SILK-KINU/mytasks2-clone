@@ -88,6 +88,28 @@
                 </form>
             </div>
         </div>
+
+        <form action="{{ action('TasksController@search') }}" method="get" name="form2">
+            @if (isset($master['category']))
+                <div class="col-md-4">
+                    {!! Form::select('category', $master['category'], $selected['category'], ['class' => 'form-control', 'placeholder' => '==分類==']) !!}
+                </div>
+            @endif
+            <div class="row">
+                @foreach ($master as $type => $value)
+                    @if ($type !== 'category')
+                        <div class="col-md-4 type-{{ $type }}">
+                            {!! Form::select($type, $value, $selected[$type], ['class' => 'form-control', 'placeholder' => '===選択してね===']) !!}
+                        </div>
+                    @endif
+                @endforeach
+            </div>
+            <div class="col-md-4 auto">
+                {!! Form::submit('絞り込んで見る', ['class' => 'form-control']) !!}
+                category={{ old('category') }}
+            </div>
+        </form>
+
     <hr color="#202f55">
     
     <hr color="#202f55">
