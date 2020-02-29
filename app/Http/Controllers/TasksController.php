@@ -52,25 +52,46 @@ class TasksController extends Controller
         
         return back();
     }
-    
-    public function search()
+
+    public function search(Request $request)
     {
-        $master = Master::all()->sortByDesc('sort_no');
-        
+        $master = Master::all()->sortByDesc('type.sort_no');
+
+        $category = $request->input('category') ?: null;
+        // 選択されたもの
+        $selected = [
+            'category' => $category,
+        ];
         // 返却値の初期化
         $master_arr = [];
         foreach($master as $value) {
-            if (isset($master[$value->type])) {
-	            $master[$value->type][] = '';
+
+            if ($category) {
+                // 絞り込みの場合
+                if ($value->type === 'material_' . $category || $value->type === 'category') {
+                    // 一致したものだけとカテゴリーをセットする
+                    $master_arr[$value->type][$value->code] = $value->value;
+                }
+            } else {
+                // 絞り込みではない場合は全て
+                $master_arr[$value->type][$value->code] = $value->value;
             }
-            $master_arr[$value->type][$value->code] = $value->value;
-            
+
+            // 選択された材料をセットする
+            // セットされてないときにセットする
+            if (!isset($selected[$value->type])) {
+                $selected[$value->type] = $request->input($value->type) ?: null;
+            }
         }
         \Log::debug(__LINE__.' '.__FILE__.' '.print_r($master_arr, true));
-        $arr=[
+
+        // セットした内容の確認
+//        \Log::debug(print_r($selected, true));
+
+        $arr = [
             'master' => $master_arr,
-            ];
-        
+            'selected' => $selected,
+        ];
         return view('tasks.search', $arr);
       
     }
