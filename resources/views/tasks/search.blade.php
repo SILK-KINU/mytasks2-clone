@@ -14,10 +14,11 @@
                                 <select class= "form-control" name="categories">
                                     <option value="" selected>選択してください</option>
                                     <option value="meat">肉</option>
-                                    <option value="seafood">魚</option>
-                                    <option value="vegitable">野菜</option>
+                                    <option value="seafood">魚介類</option>
+                                    <option value="vegitable">野菜類</option>
                                     <option value="dairy-product">卵&乳製品</option>
-                                    <option value="bean">豆製品</option>
+                                    <option value="bean">大豆製品</option>
+                                    <option value="seasoning">調味料</option>
                                 </select>
                                 {{Form::select('categories', $master['category'])}}
                             </div> 
@@ -27,14 +28,17 @@
                         <label class="col-md-4　col-form-label text-md-right">食品名</label>
                             <div class="col-md-6">
                                 <select class= "form-control" name="meat">
-                                    <option value="pork_loin">豚ロース</option>
+                                    <option value="pork_3">豚ロース＆豚もも＆豚ヒレ</option>
                                     <option value="pork_ibs">豚バラ</option>
-                                    <option value="beef_round">牛もも（赤身）</option>
-                                    <option value="beef_minched">牛挽肉</option>
-                                　　<option value="ram">ラムチョップ</option>
-                                    <option value="chicken_leg">鶏もも</option>
-                                    <option value="chicken_breast">鶏ムネ</option>
+                                    <option value="beef_loin">牛ロース</option>
+                                    <option value="beef_2">牛バラ＆牛タン</option>
+                                　　<option value="beet_tenderloin">牛ヒレ</option>
+                                    <option value="ram_loin">ラムロース</option>
+                                    <option value="ram_round">ラムもも</option>
+                                    <option value="chicken_cartilage">鳥ナンコツ</option>
+                                    <option value="chicken_3">鶏ムネ＆鶏もも＆鶏ささみ</option>
                                     <option value="becon">ベーコン</option>
+                                    <option value="uncured_ham">生ハム</option>
                                 </select>
                                 <select class= "form-control" name="seafood">
                                     <option value="chub_mackerel">鯖</option>
@@ -89,9 +93,6 @@
             </div>
         </div>
     <hr color="#202f55">
-    
-    <hr color="#202f55">
-    <u><a href="{{url('tasks/recommend')}}">低糖質の食品一覧</a></u>
     </div>
 @endsection
 
