@@ -49476,6 +49476,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/body.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/body.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/front.scss":
 /*!***********************************!*\
   !*** ./resources/sass/front.scss ***!
@@ -49499,9 +49510,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/front.scss ./resources/sass/tweetbody.scss ***!
-  \*****************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin.scss ./resources/sass/front.scss ./resources/sass/body.scss ./resources/sass/tweetbody.scss ***!
+  \********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49509,6 +49520,7 @@ __webpack_require__(/*! /home/ec2-user/environment/mytasks2/resources/js/app.js 
 __webpack_require__(/*! /home/ec2-user/environment/mytasks2/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /home/ec2-user/environment/mytasks2/resources/sass/admin.scss */"./resources/sass/admin.scss");
 __webpack_require__(/*! /home/ec2-user/environment/mytasks2/resources/sass/front.scss */"./resources/sass/front.scss");
+__webpack_require__(/*! /home/ec2-user/environment/mytasks2/resources/sass/body.scss */"./resources/sass/body.scss");
 module.exports = __webpack_require__(/*! /home/ec2-user/environment/mytasks2/resources/sass/tweetbody.scss */"./resources/sass/tweetbody.scss");
 
 

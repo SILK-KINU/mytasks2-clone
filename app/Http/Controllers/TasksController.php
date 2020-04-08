@@ -64,6 +64,10 @@ class TasksController extends Controller
         ];
         // 返却値の初期化
         $master_arr = [];
+        
+        // 検索結果の初期化
+        $result = [];
+        
         foreach($master as $value) {
 
             if ($category) {
@@ -71,6 +75,10 @@ class TasksController extends Controller
                 if ($value->type === 'material_' . $category || $value->type === 'category') {
                     // 一致したものだけとカテゴリーをセットする
                     $master_arr[$value->type][$value->code] = $value->value;
+                
+                    if ($request->input($value->type) === $value->code) {
+                        $result = json_decode(json_encode($value), true);
+                    }
                 }
             } else {
                 // 絞り込みではない場合は全て
@@ -82,15 +90,16 @@ class TasksController extends Controller
             if (!isset($selected[$value->type])) {
                 $selected[$value->type] = $request->input($value->type) ?: null;
             }
+            
         }
-        \Log::debug(__LINE__.' '.__FILE__.' '.print_r($master_arr, true));
 
         // セットした内容の確認
-//        \Log::debug(print_r($selected, true));
+        // \Log::debug(print_r($result, true));
 
         $arr = [
             'master' => $master_arr,
             'selected' => $selected,
+            'result' => $result,
         ];
         return view('tasks.search', $arr);
       

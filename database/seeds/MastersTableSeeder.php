@@ -335,7 +335,7 @@ class MastersTableSeeder extends Seeder
             ], 
             [
                 'id' => 33,
-                'type' => 'material_dairy_product',
+                'type' => 'material_dairy-product',
                 'code' => 'egg',
                 'value' => '卵',
                 'amount' => 3/10,
@@ -345,7 +345,7 @@ class MastersTableSeeder extends Seeder
             ], 
             [
                 'id' => 34,
-                'type' => 'material_dairy_product',
+                'type' => 'material_dairy-product',
                 'code' => 'camembert cheese',
                 'value' => 'カマンベールチーズ',
                 'amount' => 9/10,
@@ -355,7 +355,7 @@ class MastersTableSeeder extends Seeder
             ], 
             [
                 'id' => 35,
-                'type' => 'material_dairy_product',
+                'type' => 'material_dairy-product',
                 'code' => 'cheeses',
                 'value' => 'ゴーダチーズ＆チェダーチーズ',
                 'amount' => 14/10,
@@ -365,7 +365,7 @@ class MastersTableSeeder extends Seeder
             ],
             [
                 'id' => 36,
-                'type' => 'material_dairy_product',
+                'type' => 'material_dairy-product',
                 'code' => 'fresh_cream',
                 'value' => '植物性生クリーム',
                 'amount' => 29/10,
@@ -375,7 +375,7 @@ class MastersTableSeeder extends Seeder
             ],
             [
                 'id' => 37,
-                'type' => 'material_dairy_product',
+                'type' => 'material_dairy-product',
                 'code' => 'butter',
                 'value' => 'バター',
                 'amount' => 3/10,

@@ -3,5 +3,6 @@
     "/css/app.css": "/css/app.css",
     "/css/admin.css": "/css/admin.css",
     "/css/front.css": "/css/front.css",
+    "/css/body.css": "/css/body.css",
     "/css/tweetbody.css": "/css/tweetbody.css"
 }

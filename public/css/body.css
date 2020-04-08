@@ -39,3 +39,9 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+div.result div {
+  background-color: #ffc;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
